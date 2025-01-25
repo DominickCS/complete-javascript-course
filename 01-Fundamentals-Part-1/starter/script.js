@@ -20,7 +20,6 @@ let myFirstJob = 'Whataburger';
 let myCurrentJob = 'Data Center Technician';
 
 console.log(myFirstJob);
-*/
 
 let javascriptIsFun = true;
 console.log(javascriptIsFun);
@@ -46,3 +45,10 @@ console.log(typeof year);
 
 // Similarly to an empty string, type of null SHOULD BE null but due to legacy support, null is an object
 console.log(typeof null);
+*/
+
+// The age variable is mutated from the value 30, to the value 24.
+let age = 30;
+age = 24;
+
+
