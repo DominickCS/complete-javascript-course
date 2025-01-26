@@ -35,3 +35,8 @@ averagePopulation = 33000000;
 console.log(population > averagePopulation);
 let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
 console.log(description);
+
+// Strings and Template Literals Assignment
+
+description = `${country} is in ${continent}, and its ${population} million people speak ${language}!`;
+console.log(description);
