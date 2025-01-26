@@ -1,6 +1,6 @@
 // Values and Variables Assignment
-let country = "United States of America";
-let continent = "North America";
+const country = "United States of America";
+const continent = "North America";
 let population = 343600000;
 
 console.log(continent);
@@ -9,10 +9,15 @@ console.log(population);
 
 
 // Data Types Assignment
-let isIsland = false;
+const isIsland = false;
 let language;
 
 console.log(typeof country);
 console.log(typeof population);
 console.log(typeof isIsland);
 console.log(typeof language);
+
+// let, const and var Assignment
+
+language = 'English';
+isIsland = true;
