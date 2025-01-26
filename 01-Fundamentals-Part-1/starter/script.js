@@ -45,10 +45,24 @@ console.log(typeof year);
 
 // Similarly to an empty string, type of null SHOULD BE null but due to legacy support, null is an object
 console.log(typeof null);
-*/
 
 // The age variable is mutated from the value 30, to the value 24.
 let age = 30;
 age = 24;
 
+// Const variables are immutable (cannot be changed)
+const birthYear = 2000;
+// birthYear = 2001;
 
+// Const needs a value initializer
+//const job;
+
+
+// While this code works, we should stay away from var for now
+var job = 'Programmer';
+job = 'Technician';
+
+// This doesn't create this variable in the current scope, make sure to clearly declare a variable.
+lastName = 'Smith';
+console.log(lastName);
+*/
