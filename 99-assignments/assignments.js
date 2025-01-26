@@ -20,4 +20,18 @@ console.log(typeof language);
 // let, const and var Assignment
 
 language = 'English';
-isIsland = true;
+//isIsland = true;
+
+// Basic Operators Assignment
+
+halfPopulation = population / 2;
+console.log(halfPopulation);
+halfPopulation++;
+console.log(halfPopulation);
+
+let finlandPopulation = 6000000;
+console.log(population > finlandPopulation);
+averagePopulation = 33000000;
+console.log(population > averagePopulation);
+let description = country + " is in " + continent + ", and its " + population + " million people speak " + language;
+console.log(description);
