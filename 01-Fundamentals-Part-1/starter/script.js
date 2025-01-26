@@ -65,7 +65,6 @@ job = 'Technician';
 // This doesn't create this variable in the current scope, make sure to clearly declare a variable.
 lastName = 'Smith';
 console.log(lastName);
-*/
 
 const now = 2037;
 const ageDominick = now - 2000;
@@ -95,3 +94,22 @@ console.log(ageDominick >= 18);
 
 const isFullAge = ageDominick >= 18;
 console.log(now - 2000 > now - 2018);
+
+*/
+
+const now = 2037;
+const ageDominick = now - 2000;
+const ageCristian = now - 2001;
+
+console.log(now - 2000 > now - 2018);
+
+console.log(25 -10 - 5);;
+
+let x, y;
+
+x = y = 25 - 10 - 5; // x = y = 10, x = 10
+
+console.log(x, y);
+
+const averageAge = (ageDominick + ageCristian) / 2;
+console.log(ageDominick, ageCristian, averageAge);
