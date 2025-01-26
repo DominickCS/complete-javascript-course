@@ -112,7 +112,6 @@ console.log(x, y);
 
 const averageAge = (ageDominick + ageCristian) / 2;
 console.log(ageDominick, ageCristian, averageAge);
-*/
 
 const firstName = 'Dominick';
 const job = 'Data Center Technician';
@@ -137,3 +136,24 @@ console.log(`String
 witih multiple
 lines.
 No Need for backslash N!`)
+
+*/
+
+const age = 15;
+
+if(age >= 18) {
+  console.log(`Dominick can start driving license!`);
+} else {
+  const yearsLeft = 18 - age;
+  console.log(`Dominick cannot start driving license!, he has ${yearsLeft} years left before he is eligible.`);
+}
+
+const birthYear = 2000;
+let century;
+if(birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+// Interestingly, I was born in the 20th century!
+console.log(century);
