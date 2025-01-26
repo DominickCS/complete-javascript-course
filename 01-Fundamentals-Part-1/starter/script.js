@@ -137,7 +137,6 @@ witih multiple
 lines.
 No Need for backslash N!`)
 
-*/
 
 const age = 15;
 
@@ -157,3 +156,5 @@ if(birthYear <= 2000) {
 }
 // Interestingly, I was born in the 20th century!
 console.log(century);
+
+*/
