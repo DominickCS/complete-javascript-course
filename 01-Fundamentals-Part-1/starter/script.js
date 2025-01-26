@@ -95,7 +95,6 @@ console.log(ageDominick >= 18);
 const isFullAge = ageDominick >= 18;
 console.log(now - 2000 > now - 2018);
 
-*/
 
 const now = 2037;
 const ageDominick = now - 2000;
@@ -113,3 +112,28 @@ console.log(x, y);
 
 const averageAge = (ageDominick + ageCristian) / 2;
 console.log(ageDominick, ageCristian, averageAge);
+*/
+
+const firstName = 'Dominick';
+const job = 'Data Center Technician';
+const birthYear = 2000;
+const currentYear = 2025;
+
+const dominick = "I'm " + firstName + ', a ' + (currentYear - birthYear) + ' year old ' + job + '!';
+console.log(dominick);
+
+// Template Literals
+
+const dominickNew = `I'm ${firstName}, a ${currentYear - birthYear} year old ${job}!`;
+console.log(dominickNew);
+
+console.log(`Hello World!\nThis is a regular string`);
+
+console.log('String with \n\
+  multiple \n\
+  lines');
+
+console.log(`String
+witih multiple
+lines.
+No Need for backslash N!`)
