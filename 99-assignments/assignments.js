@@ -84,7 +84,6 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 // }
 
 // The switch statement Assignment
-
 language = (prompt(`Enter a language`));
 
 switch (language) {

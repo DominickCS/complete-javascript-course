@@ -294,4 +294,14 @@ if (day === `monday`) {
   console.log(`Not a valid day!`);
 }
 
+
+3 + 4 // Expression
+2000 // Expression, will produce a value
+true && false && !false // Expression
+
+if (24 > 10) { // statement, it doesn't produce a value
+  const str = `24 is bigger`; 
+}
+
+console.log(`I'm ${2037 - 2000} years old.`);
 */
