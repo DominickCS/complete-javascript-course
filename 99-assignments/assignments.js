@@ -11,7 +11,6 @@ console.log(population);
 // Data Types Assignment
 const isIsland = false;
 let language;
-language = 'English';
 /*
 console.log(typeof country);
 console.log(typeof population);
@@ -78,8 +77,34 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 
 // Logical Operators Assignment
 
-if(language === 'English' && population < 50000000 && !isIsland) {
-  console.log(`You should live in ${country} :)`);
-} else {
-  console.log(`${country} does not meet your criteria :(`);
+// if(language === 'English' && population < 50000000 && !isIsland) {
+  // console.log(`You should live in ${country} :)`);
+// } else {
+  // console.log(`${country} does not meet your criteria :(`);
+// }
+
+// The switch statement Assignment
+
+language = (prompt(`Enter a language`));
+
+switch (language) {
+  case 'chinese':
+  case 'mandarin':
+    console.log(`Most number of native speakers!`);
+    break;
+  case `spanish`:
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case `english`:
+    console.log(`3rd place`);
+    break;
+  case `hindi`:
+    console.log(`Number 4`);
+    break;
+  case `arabic`:
+    console.log(`5th most spoken language`);
+    break;
+  default:
+    console.log(`Great language too :D`);
+    break;
 }
