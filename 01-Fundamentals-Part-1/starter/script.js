@@ -205,7 +205,6 @@ if(height) {
   console.log(`Height is UNDEFINED`);
 }
 
-*/
 
 const age = '18';
 
@@ -227,3 +226,28 @@ if (favoriteNum === 21) {
 }
 
 if (favoriteNum !== 21) console.log(`Why not 21?`);
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriversLicense && hasGoodVision); // and operator
+console.log(hasDriversLicense || hasGoodVision); // or operator
+console.log(!hasDriversLicense); // not operator
+
+
+// if(hasDriversLicense && hasGoodVision) {
+  // console.log(`Dominick is able to drive!`);
+// } else {
+  // console.log(`Someone else should drive...`);
+// }
+
+const isTired = false; // C
+console.log(hasDriversLicense && hasGoodVision && isTired); // or operator
+
+if(hasDriversLicense && hasGoodVision && !isTired) {      
+  console.log(`Dominick is able to drive!`);  
+} else {                                      
+  console.log(`Someone else should drive...`);
+}                                             
+*/
