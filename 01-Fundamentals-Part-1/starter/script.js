@@ -182,8 +182,6 @@ let n = '1' + 1;
 n = n - 1;
 console.log(n);
 
-*/
-
 // 5 Falsy Values: 0, '', undefined, null, NaN
 // All of these values will be false when converted into a boolean
 
@@ -206,3 +204,26 @@ if(height) {
 } else {
   console.log(`Height is UNDEFINED`);
 }
+
+*/
+
+const age = '18';
+
+if(age === 18) console.log(`You just became an adult :D (strict)`);
+if(age == 18) console.log(`You just became an adult :D (loose)`);
+
+const favoriteNum = Number(prompt(`What's your favorite number?`));
+console.log(favoriteNum);
+console.log(typeof(favoriteNum));
+
+if (favoriteNum === 21) {
+  console.log(`Cool! 21 is an amazing number!`);
+} else if(favoriteNum === 7) {
+  console.log(`7 is also a cool number!`);
+} else if(favoriteNum === 9) {
+  console.log(`9 is also a cool number!`);
+} else {
+  console.log(`Number is not as cool as 21, 7, or 9 :P`);
+}
+
+if (favoriteNum !== 21) console.log(`Why not 21?`);
