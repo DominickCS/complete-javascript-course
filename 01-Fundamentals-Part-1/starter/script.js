@@ -304,4 +304,22 @@ if (24 > 10) { // statement, it doesn't produce a value
 }
 
 console.log(`I'm ${2037 - 2000} years old.`);
+
+const age = Number(prompt(`Enter your age`));
+age >= 21 ? console.log('I like to drink wine'): 
+console.log(`I like to drink water`);
+
+const drink = age >= 21 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if(age >= 21) {
+  drink2 = 'wine';
+} else {
+  drink2 = 'water';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >=21 ? 'wine' : 'water'}!`);
+
 */
