@@ -184,4 +184,25 @@ console.log(n);
 
 */
 
+// 5 Falsy Values: 0, '', undefined, null, NaN
+// All of these values will be false when converted into a boolean
 
+console.log(Boolean(0)); // 0 => Falsy Value
+console.log(Boolean(undefined)); // undefined => Falsy Value
+console.log(Boolean('Dominick')); // Non-empty String => Truthy Value
+console.log(Boolean({})); // Empty Object => Truthy Value
+console.log(Boolean('')); // Empty String => Falsy Value
+
+let money;
+if(money) {
+  console.log(`Don't spend it all ;)`);
+} else {
+  console.log(`You should get a job!`);
+}
+
+let height = 0;
+if(height) {
+  console.log(`YAY! Height is defined`);
+} else {
+  console.log(`Height is UNDEFINED`);
+}
