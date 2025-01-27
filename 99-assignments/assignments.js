@@ -1,7 +1,7 @@
 // Values and Variables Assignment
 const country = "United States of America";
 const continent = "North America";
-let population = 343600000;
+let population = 300000;
 
 console.log(continent);
 console.log(country);
@@ -11,7 +11,8 @@ console.log(population);
 // Data Types Assignment
 const isIsland = false;
 let language;
-
+language = 'English';
+/*
 console.log(typeof country);
 console.log(typeof population);
 console.log(typeof isIsland);
@@ -60,17 +61,25 @@ console.log('19' - '13' + '17'); // -> 617
 console.log('19' - '13' + 17); // -> 23
 console.log('123' < 57); // -> false
 console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
-
+*/
 // Equality Operators: == vs. === Assignment
 
-const numNeighbors = Number(prompt(`How many neighbor countries does your country have?`));
+// const numNeighbors = Number(prompt(`How many neighbor countries does your country have?`));
 
-if (numNeighbors === 1){
-  console.log(`Only 1 border`);
-} else if (numNeighbors > 1){
-  console.log(`More than 1 border`);
-} else{
-  console.log(`No borders`);
-}
+// if (numNeighbors === 1){
+  // console.log(`Only 1 border`);
+// } else if (numNeighbors > 1){
+  // console.log(`More than 1 border`);
+// } else{
+  // console.log(`No borders`);
+// }
 
 // We should use === and type conversion when we are seeking precise comparison or strict comparison.
+
+// Logical Operators Assignment
+
+if(language === 'English' && population < 50000000 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not meet your criteria :(`);
+}
