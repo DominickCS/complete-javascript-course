@@ -110,3 +110,18 @@ console.log(5 + 6 + '4' + 9 - 4 - 2); // -> 1143
 
 // The conditional ternary operator Assignment
 console.log(`${country}'s population is ${population>33000000 ? 'above' : 'below'} average!`)
+
+// Functions Assignment
+
+function describeCountry(country, population, capitalCity) {
+  const description = `${country} has ${population} million people and its capital city is ${capitalCity}`;
+  return description
+}
+
+const describeUSA = describeCountry(`The United States`, 346, `Washington DC`);
+const describeJapan = describeCountry(`Japan`, 37 ,`Tokyo`);
+const describeSwitzerland = describeCountry(`Switzerland`, 8.9 , `Bern`);
+
+console.log(describeUSA);
+console.log(describeJapan);
+console.log(describeSwitzerland);
