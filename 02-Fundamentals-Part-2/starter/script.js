@@ -9,7 +9,6 @@ if(hasDriversLicense) console.log(`I can drive :D`);
 
 // const interface = `Audio`;
 // const private = 534;
-*/
 
 function logger() {
 console.log('My name is Dominick');
@@ -37,3 +36,23 @@ function getUsername () {
 
 const currentUser = getUsername();
 console.log(`Hello ${currentUser}!`);
+*/
+
+// Function Declaration
+// Can call function before initalized with Declaration (due to hoisting)
+
+const age1 = calcAge1(2000);
+
+function calcAge1 (birthYear) {
+  return 2025 - birthYear;
+}
+
+console.log(age1);
+
+// Anonymous Function or Function Expression
+const calcAge2 = function (birthYear) {
+  return 2025 - birthYear;
+}
+
+const age2 = calcAge2(2000);
+console.log(age2);
