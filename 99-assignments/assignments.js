@@ -148,3 +148,18 @@ const perChina2 = percentageOfWorld2(1407);
 console.log(perUSA2);
 console.log(perIndia2);
 console.log(perChina2);
+
+// Calling functions inside other functions Assignment
+function describePopulation(country, population) {
+  const percentage = percentageOfWorld1(population);
+  return `${country} has ${population} million people, which is about ${percentage} of the world`;
+}
+
+
+const descUSA = describePopulation(`The United States of America`, 346);
+const descIndia = describePopulation(`India`, 1419);
+const descChina = describePopulation(`China`, 1407);
+
+console.log(descUSA);
+console.log(descIndia);
+console.log(descChina);
