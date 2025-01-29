@@ -125,3 +125,26 @@ const describeSwitzerland = describeCountry(`Switzerland`, 8.9 , `Bern`);
 console.log(describeUSA);
 console.log(describeJapan);
 console.log(describeSwitzerland);
+
+// Function Declarations vs Expressions
+function percentageOfWorld1(population) {
+  return `${(population / 8097) * 100} %`;
+}
+
+const perUSA = percentageOfWorld1(346);
+const perIndia = percentageOfWorld1(1419);
+const perChina = percentageOfWorld1(1407);
+console.log(perUSA);
+console.log(perIndia);
+console.log(perChina);
+
+const percentageOfWorld2 = function(population) {
+  return `${(population / 8097) * 100} %`;
+}
+
+const perUSA2 = percentageOfWorld2(346);
+const perIndia2 = percentageOfWorld2(1419);
+const perChina2 = percentageOfWorld2(1407);
+console.log(perUSA2);
+console.log(perIndia2);
+console.log(perChina2);
