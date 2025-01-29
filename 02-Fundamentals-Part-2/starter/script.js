@@ -36,7 +36,6 @@ function getUsername () {
 
 const currentUser = getUsername();
 console.log(`Hello ${currentUser}!`);
-*/
 
 // Function Declaration
 // Can call function before initalized with Declaration (due to hoisting)
@@ -56,3 +55,20 @@ const calcAge2 = function (birthYear) {
 
 const age2 = calcAge2(2000);
 console.log(age2);
+
+*/
+
+// Arrow Function
+const calcAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calcAge3(2000);
+console.log(age3);
+
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2025 - birthYear;
+  const retirement = 65 - age;
+  // return retirement;
+  return `${firstName} retires in ${retirement} years!`;
+}
+
+console.log(yearsUntilRetirement(2000, `Dominick`));
