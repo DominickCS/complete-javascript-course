@@ -106,7 +106,6 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(2000, `Dominick`));
 console.log(yearsUntilRetirement(1953, `Westmooreland`));
-*/
 
 const friends = [`Juan`, `Derek`, `Colton`];
 console.log(friends);
@@ -145,3 +144,37 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
+
+*/
+
+const friends = [`Juan`, `Derek`, `David`];
+
+// Add Elements
+const newLength = friends.push(`Colton`);
+// console.log(newLength);
+console.log(friends);
+
+friends.unshift(`Parker`);
+console.log(friends);
+
+// Remove elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf(`Derek`));
+console.log(friends.indexOf(`Parker`));
+
+friends.push(23);
+console.log(friends.includes(`Derek`));
+console.log(friends.includes(`Parker`));
+console.log(friends.includes(`23`)); // Checks for strict equality, no type conversion using includes method
+console.log(friends.includes(23));
+
+if (friends.includes(`Derek`)) {
+  console.log(`You have a friend named Derek`);
+}
