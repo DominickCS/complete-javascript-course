@@ -163,3 +163,12 @@ const descChina = describePopulation(`China`, 1407);
 console.log(descUSA);
 console.log(descIndia);
 console.log(descChina);
+
+// Arrays Assignment
+
+const populations = new Array(346, 8.9, 37, 1419);
+
+console.log(populations.length === 4);
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+console.log(percentages);
