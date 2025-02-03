@@ -177,7 +177,6 @@ console.log(friends.includes(23));
 if (friends.includes(`Derek`)) {
   console.log(`You have a friend named Derek`);
 }
-*/
 
 const dominick = {
   firstName: `Dominick`,
@@ -187,19 +186,19 @@ const dominick = {
   friends: [`Johnny`, `Mario`, `Gabe`]
 };
 
-console.log(dominick);
+// console.log(dominick);
 
 // Dot Notation
 
-console.log(dominick.lastName);
+// console.log(dominick.lastName);
 
 // Bracket Notation
 
-console.log(dominick[`lastName`]);
+// console.log(dominick[`lastName`]);
 
-const nameKey = `Name`;
-console.log(dominick[`first` + nameKey]);
-console.log(dominick[`last` + nameKey]);
+// const nameKey = `Name`;
+// console.log(dominick[`first` + nameKey]);
+// console.log(dominick[`last` + nameKey]);
 
 // console.log(dominick.`last` + nameKey);
 
@@ -213,12 +212,49 @@ console.log(dominick[`last` + nameKey]);
   // console.log(`Wrong request!`)
 // }
 
-dominick.location = `Texas`;
-dominick[`youtube`] = `@y2kdom`;
-console.log(dominick);
+// dominick.location = `Texas`;
+// dominick[`youtube`] = `@y2kdom`;
+// console.log(dominick);
 
 
 //Challenge
 // Dominick has 3 friends, and his best friend is Johnny
 
-console.log(`${dominick.firstName} has ${dominick.friends.length} friends, and his best friend is named ${dominick.friends[0]}.` )
+// console.log(`${dominick.firstName} has ${dominick.friends.length} friends, and his best friend is named ${dominick.friends[0]}.` )
+*/
+
+
+const dominick = {
+  firstName: `Dominick`,
+  lastName: `Smith`,
+  birthYear: 2000,
+  job: `Data Center Technician`,
+  friends: [`Johnny`, `Mario`, `Gabe`],
+  hasDriversLicense: true,
+
+//  calcAge: function(birthYear) {
+//    return 2025 - birthYear;
+//  }
+
+//  calcAge: function () {
+//    // console.log(this);
+//    return 2025 - this.birthYear;
+//  }
+    calcAge: function() {
+    this.age = 2025 - this.birthYear;
+    return this.age;
+  },
+    getSummary: function() {
+    this.summary = `${this.firstName} is a ${this.calcAge()} year old ${this.job}, and ${this.hasDriversLicense ? 'has': "doesn't have"} their drivers license.`;
+    return this.summary
+  }
+};
+
+
+// console.log(dominick.age);
+// console.log(dominick.age);
+// console.log(dominick.age);
+
+// console.log(dominick[`calcAge`](2000));
+
+console.log(dominick.getSummary())
