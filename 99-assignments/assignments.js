@@ -179,6 +179,15 @@ const myCountry = {
   country: `United States of America`,
   capital: `Washington DC`,
   language: `English`,
-  population: `${populations[0]}`,
+  population: 346,
   neigbors: [`Canada`, `Mexico`]
 }
+
+// Dot Vs Bracket Notation Assignment
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language} speaking people, ${myCountry.neigbors.length} neighboring countries and a capital of ${myCountry.capital}`)
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry[`population`] -= 2;
+console.log(myCountry.population);
