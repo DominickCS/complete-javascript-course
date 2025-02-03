@@ -180,9 +180,45 @@ if (friends.includes(`Derek`)) {
 */
 
 const dominick = {
-  fistName: `Dominick`,
+  firstName: `Dominick`,
   lastName: `Smith`,
   age: 2025 - 2000,
   job: `Data Center Technician`,
   friends: [`Johnny`, `Mario`, `Gabe`]
 };
+
+console.log(dominick);
+
+// Dot Notation
+
+console.log(dominick.lastName);
+
+// Bracket Notation
+
+console.log(dominick[`lastName`]);
+
+const nameKey = `Name`;
+console.log(dominick[`first` + nameKey]);
+console.log(dominick[`last` + nameKey]);
+
+// console.log(dominick.`last` + nameKey);
+
+// const interestedIn = prompt(`What do you want to know about Dominick? Choose between firstName, lastName, age, job, and friends`);
+// console.log(interestedIn);
+
+
+// if (dominick[interestedIn]) {
+  // console.log(dominick[interestedIn])
+// } else {
+  // console.log(`Wrong request!`)
+// }
+
+dominick.location = `Texas`;
+dominick[`youtube`] = `@y2kdom`;
+console.log(dominick);
+
+
+//Challenge
+// Dominick has 3 friends, and his best friend is Johnny
+
+console.log(`${dominick.firstName} has ${dominick.friends.length} friends, and his best friend is named ${dominick.friends[0]}.` )
