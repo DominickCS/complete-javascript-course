@@ -180,7 +180,18 @@ const myCountry = {
   capital: `Washington DC`,
   language: `English`,
   population: 346,
-  neigbors: [`Canada`, `Mexico`]
+  neigbors: [`Canada`, `Mexico`],
+
+// Object Methods Assignment
+  describe: function() {
+    description = `${this.country} has ${this.population} million ${this.language} speaking people, ${this.neigbors.length} neighboring countries and a capital of ${this.capital}`
+    return description;
+  },
+
+  checkIsland: function() {
+    this.isIsland = this.neigbors.length === 0 ? true : false;
+    return this.isIsland;
+  }
 }
 
 // Dot Vs Bracket Notation Assignment
@@ -192,4 +203,7 @@ console.log(myCountry.population);
 myCountry[`population`] -= 2;
 console.log(myCountry.population);
 
+// Object Methods Assignment
 
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland())
