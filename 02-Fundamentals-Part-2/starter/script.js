@@ -221,7 +221,6 @@ const dominick = {
 // Dominick has 3 friends, and his best friend is Johnny
 
 // console.log(`${dominick.firstName} has ${dominick.friends.length} friends, and his best friend is named ${dominick.friends[0]}.` )
-*/
 
 
 const dominick = {
@@ -258,3 +257,22 @@ const dominick = {
 // console.log(dominick[`calcAge`](2000));
 
 console.log(dominick.getSummary())
+*/
+
+//console.log(`Lifing weights repetition 1`);
+//console.log(`Lifing weights repetition 2`);
+//console.log(`Lifing weights repetition 3`);
+//console.log(`Lifing weights repetition 4`);
+//console.log(`Lifing weights repetition 5`);
+//console.log(`Lifing weights repetition 6`);
+//console.log(`Lifing weights repetition 7`);
+//console.log(`Lifing weights repetition 8`);
+//console.log(`Lifing weights repetition 9`);
+//console.log(`Lifing weights repetition 10`);
+
+
+
+// for loop keeps running while condition is TRUE
+for(let rep = 1; rep <=9; rep ++) {
+  console.log(`Lifting weights, repetition ${rep}`)
+}
