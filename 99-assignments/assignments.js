@@ -207,3 +207,9 @@ console.log(myCountry.population);
 
 console.log(myCountry.describe());
 console.log(myCountry.checkIsland())
+
+// Iteration: The for Loop Assignment
+
+for (let voter = 1; voter <= 50; voter ++) {
+  console.log(`Voter number ${voter} is currently voting`);
+}
