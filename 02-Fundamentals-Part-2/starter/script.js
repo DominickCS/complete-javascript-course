@@ -257,7 +257,6 @@ const dominick = {
 // console.log(dominick[`calcAge`](2000));
 
 console.log(dominick.getSummary())
-*/
 
 //console.log(`Lifing weights repetition 1`);
 //console.log(`Lifing weights repetition 2`);
@@ -276,3 +275,35 @@ console.log(dominick.getSummary())
 for(let rep = 1; rep <=9; rep ++) {
   console.log(`Lifting weights, repetition ${rep}`)
 }
+*/
+
+const dominick = [`Dominick`, `Smith`, 2025 - 2000, `Data Center Technician`, [`Juan`, `Derek`, `David`], true];
+const types = [];
+
+for (let i = 0; i < dominick.length ; i++) {
+  console.log(dominick[i], typeof(dominick[i]));
+  types.push(typeof(dominick[i]));
+};
+
+console.log(types);
+
+const years = [2000, 2001, 1999, 2012];
+const ages = [];
+
+for (let age = 0; age < years.length ; age ++) {
+  ages.push(2025 - years[age]);
+};
+
+console.log(ages);
+
+// continue and break
+for (let i = 0; i < dominick.length ; i++) {
+  if (typeof dominick[i] !== 'string') continue;
+  console.log(dominick[i], typeof(dominick[i]));
+};
+
+for (let i = 0; i < dominick.length ; i++) {
+  if (typeof dominick[i] === 'number') break;
+  console.log(dominick[i], typeof(dominick[i]));
+};
+
