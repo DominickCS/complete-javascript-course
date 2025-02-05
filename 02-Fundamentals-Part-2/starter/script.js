@@ -275,14 +275,13 @@ console.log(dominick.getSummary())
 for(let rep = 1; rep <=9; rep ++) {
   console.log(`Lifting weights, repetition ${rep}`)
 }
-*/
 
 const dominick = [`Dominick`, `Smith`, 2025 - 2000, `Data Center Technician`, [`Juan`, `Derek`, `David`], true];
 const types = [];
 
 for (let i = 0; i < dominick.length ; i++) {
   console.log(dominick[i], typeof(dominick[i]));
-  types.push(typeof(dominick[i]));
+  types.push(typeof(dominick[i]));const dominick = [`Dominick`, `Smith`, 2025 - 2000, `Data Center Technician`, [`Juan`, `Derek`, `David`], true];
 };
 
 console.log(types);
@@ -306,4 +305,17 @@ for (let i = 0; i < dominick.length ; i++) {
   if (typeof dominick[i] === 'number') break;
   console.log(dominick[i], typeof(dominick[i]));
 };
+*/
 
+const dominick = [`Dominick`, `Smith`, 2025 - 2000, `Data Center Technician`, [`Juan`, `Derek`, `David`], true];
+
+for (let i = dominick.length - 1; i >= 0 ; i--) {
+  console.log(i, dominick[i]);
+}
+
+for (let excercise = 1; excercise <=4; excercise ++) {
+  console.log(`------- Starting Exercise ${excercise}`);
+  for (let repetition = 1; repetition <=6; repetition ++) {
+    console.log(`Excercise ${excercise}: Lifting Weights: repetition ${repetition}`);
+  }
+};
