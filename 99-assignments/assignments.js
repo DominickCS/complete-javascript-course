@@ -213,3 +213,14 @@ console.log(myCountry.checkIsland())
 for (let voter = 1; voter <= 50; voter ++) {
   console.log(`Voter number ${voter} is currently voting`);
 }
+
+// Looping Backwards and Loops in Loops
+
+const listOfNeighbors = [[`Canada`,`Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russia`]];
+
+for (let i = 0; i < listOfNeighbors.length; i++) {
+  console.log(`Printing Neighbor Array #${i+1}`);
+  for (let j = 0; j < listOfNeighbors[i].length; j++) {
+    console.log(listOfNeighbors[i][j]);
+  }
+}
