@@ -214,6 +214,13 @@ for (let voter = 1; voter <= 50; voter ++) {
   console.log(`Voter number ${voter} is currently voting`);
 }
 
+// Looping Arrays, Breaking and Continuing Assignment
+const percentages2 = [];
+for (let i = 0; i < populations.length; i++ ) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentages2);
+
 // Looping Backwards and Loops in Loops
 
 const listOfNeighbors = [[`Canada`,`Mexico`], [`Spain`], [`Norway`, `Sweden`, `Russia`]];
@@ -224,3 +231,13 @@ for (let i = 0; i < listOfNeighbors.length; i++) {
     console.log(listOfNeighbors[i][j]);
   }
 }
+
+// The while loop Assignment
+const percentages3 = [];
+let i = 0
+while (percentages3.length < populations.length) {
+  percentages3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+
+console.log(percentages3);
