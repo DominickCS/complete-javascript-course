@@ -305,7 +305,6 @@ for (let i = 0; i < dominick.length ; i++) {
   if (typeof dominick[i] === 'number') break;
   console.log(dominick[i], typeof(dominick[i]));
 };
-*/
 
 const dominick = [`Dominick`, `Smith`, 2025 - 2000, `Data Center Technician`, [`Juan`, `Derek`, `David`], true];
 
@@ -319,3 +318,19 @@ for (let excercise = 1; excercise <=4; excercise ++) {
     console.log(`Excercise ${excercise}: Lifting Weights: repetition ${repetition}`);
   }
 };
+
+*/
+
+let rep = 1;
+
+while (rep <= 10) {
+  // console.log(`WHILE: Lifting weights repertiton ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+while (dice !== 6) {
+  dice = Math.trunc(Math.random() * 6) + 1;
+  console.log(`You rolled a ${dice}`);
+
+}
