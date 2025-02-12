@@ -58,7 +58,7 @@ console.log(calcTempAmplitude(temperaturesOne, temperaturesTwo));
 const printForecast = function(arr) {
   let forecast = "";
   for(let i = 0; i < arr.length; i++) {
-    forecast = forecast + `...${arr[i]} in ${i + 1} days... `
+    forecast = forecast + `...${arr[i]}° in ${i + 1} days... `
   }
   return(forecast);
 }
