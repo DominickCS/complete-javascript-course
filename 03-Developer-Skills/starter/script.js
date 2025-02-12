@@ -79,26 +79,27 @@ const trackTime = function(arr) {
     totalHours += arr[i];
     if(arr[i] > 0) {
       daysWorked += 1;
+      // console.log(daysWorked);  // Debug the days worked for day mapping
     }
 
-    if(arr[i] > dayMostHours) {
+    if(arr[i] >= dayMostHours) {
       dayMostHours ++;
     }
   }
 
-  if (dayMostHours === 0){
+  if (dayMostHours === 1){
     dayMostHours = "Monday";
-  } else if (dayMostHours === 1) {
-    dayMostHours = "Tuesday";
   } else if (dayMostHours === 2) {
-    dayMostHours = "Wednesday";
+    dayMostHours = "Tuesday";
   } else if (dayMostHours === 3) {
-    dayMostHours = "Thursday";
+    dayMostHours = "Wednesday";
   } else if (dayMostHours === 4) {
-    dayMostHours = "Friday";
+    dayMostHours = "Thursday";
   } else if (dayMostHours === 5) {
-    dayMostHours = "Saturday";
+    dayMostHours = "Friday";
   } else if (dayMostHours === 6) {
+    dayMostHours = "Saturday";
+  } else if (dayMostHours === 7) {
     dayMostHours = "Sunday";
   }
 
@@ -111,11 +112,13 @@ const trackTime = function(arr) {
   averageDailyHours = (totalHours / daysWorked);
 
   return `1. Total Hours - ${totalHours}
-2. Average Daily Hours - ${averageDailyHours}
+2. Average Daily Hours - ${averageDailyHours.toFixed(2)}
 3. The day with the most hours worked was ${dayMostHours}
 4. Number of days worked - ${daysWorked}
 5. ${totalHours} hours indicates that you worked ${fullTime ? "full-time":"part-time"} this week.`
 }
 
 const data = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+const dataTwo = [8, 8, 8, 8, 8, 8, 8.5];
 console.log(trackTime(data));
+console.log(trackTime(dataTwo));
