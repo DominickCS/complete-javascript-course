@@ -50,3 +50,21 @@ console.log(calcTempAmplitude(temperaturesOne, temperaturesTwo));
 // Function shouuld now receive two arrays of temperatures
 // With two arrays do we need to implement two functions?
 // How to merger two arrays
+//
+// Given an array of forecasted maximum temperatures, the thermometer displays a string with these temperatures
+// Example: (17, 21, 23)
+
+
+const printForecast = function(arr) {
+  let forecast = "";
+  for(let i = 0; i < arr.length; i++) {
+    forecast = forecast + `...${arr[i]} in ${i + 1} days... `
+  }
+  return(forecast);
+}
+
+const arrOne = [17, 21, 23];
+const arrTwo = [12, 5, -5, 0, 4];
+
+console.log(printForecast(arrOne));
+console.log(printForecast(arrTwo));
