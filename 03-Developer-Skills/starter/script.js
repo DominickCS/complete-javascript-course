@@ -68,3 +68,54 @@ const arrTwo = [12, 5, -5, 0, 4];
 
 console.log(printForecast(arrOne));
 console.log(printForecast(arrTwo));
+
+// Challenge #2
+//
+
+const trackTime = function(arr) {
+  let totalHours = 0
+  let averageDailyHours, dayMostHours = 0, fullTime, daysWorked = 0
+  for(let i = 0; i < arr.length; i++) {
+    totalHours += arr[i];
+    if(arr[i] > 0) {
+      daysWorked += 1;
+    }
+
+    if(arr[i] > dayMostHours) {
+      dayMostHours ++;
+    }
+  }
+
+  if (dayMostHours === 0){
+    dayMostHours = "Monday";
+  } else if (dayMostHours === 1) {
+    dayMostHours = "Tuesday";
+  } else if (dayMostHours === 2) {
+    dayMostHours = "Wednesday";
+  } else if (dayMostHours === 3) {
+    dayMostHours = "Thursday";
+  } else if (dayMostHours === 4) {
+    dayMostHours = "Friday";
+  } else if (dayMostHours === 5) {
+    dayMostHours = "Saturday";
+  } else if (dayMostHours === 6) {
+    dayMostHours = "Sunday";
+  }
+
+  if (totalHours >= 35) {
+    fullTime = true;
+  } else {
+    fullTime = false;
+  }
+
+  averageDailyHours = (totalHours / daysWorked);
+
+  return `1. Total Hours - ${totalHours}
+2. Average Daily Hours - ${averageDailyHours}
+3. The day with the most hours worked was ${dayMostHours}
+4. Number of days worked - ${daysWorked}
+5. ${totalHours} hours indicates that you worked ${fullTime ? "full-time":"part-time"} this week.`
+}
+
+const data = [7.5, 8, 6.5, 0, 8.5, 4, 0];
+console.log(trackTime(data));
