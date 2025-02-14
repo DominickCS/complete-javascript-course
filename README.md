@@ -1,6 +1,9 @@
 # Course Material and FAQ for my Complete JavaScript Course
-## Current Lecture : 70 JavaScript in the Browser : DOM and Events : 02/12/25
-### Completed JavaScript fundamentals 02/05/25!
+
+## Current Lecture : 80 - Refactoring Our Code: The DRY Principle : 02/14/25
+
+### Completed JavaScript fundamentals 02/05/25
+
 This branch of the repo contains starter files and final code for all sections and projects of the course, **exactly as shown in the videos**.
 
 Use starter code to start each section, and **final code to compare it with your own code whenever something doesn't work**!
