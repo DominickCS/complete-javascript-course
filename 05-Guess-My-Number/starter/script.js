@@ -61,6 +61,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.number').textContent = secretNumber;
       document.querySelector('.score').textContent = 20;
       document.querySelector('.number').textContent = '?';
+      document.querySelector('.message').textContent = `Start Guessing...`;
       currentScore = 20;
     });
   } else {
